@@ -1,0 +1,91 @@
+#content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15% 15% 55% 15%;
+      grid-template-rows: 15% 15% 55% 15%;
+      grid-template-areas: "header" "nav" "main" "footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 1em;
+  height: 1em;
+  border-bottom: 3px solid #98dbc6;
+}
+
+nav a#home {
+  background-color: #5bc8ac;
+  color: black;
+}
+
+nav a:hover {
+  padding: 1em 1.5em;
+  border-radius: 50%;
+  font-size: larger;
+}
+
+nav a#about {
+  background-color: #e6d72a;
+  color: black;
+}
+
+nav a#portfolio {
+  background-color: #5bc8ac;
+  color: black;
+}
+
+nav a#blog {
+  background-color: #e6d72a;
+  color: black;
+}
+
+main {
+  height: 400px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: main;
+  background-image: url("images/Developer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main #socials {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #5bc8ac;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+#logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
