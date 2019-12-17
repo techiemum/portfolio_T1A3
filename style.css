@@ -27,12 +27,15 @@ nav a {
   text-decoration: none;
   padding: 1em;
   height: 1em;
-  border-bottom: 3px solid #98dbc6;
 }
 
 nav a#home {
   background-color: #5bc8ac;
   color: black;
+  border-top: 2px solid #e6d72a;
+  border-bottom: 2px solid #e6d72a;
+  border-left: 2px solid #e6d72a;
+  border-right: 2px solid #e6d72a;
 }
 
 nav a:hover {
@@ -44,16 +47,28 @@ nav a:hover {
 nav a#about {
   background-color: #e6d72a;
   color: black;
+  border-top: 2px solid #98dbc6;
+  border-bottom: 2px solid #98dbc6;
+  border-left: 2px solid #98dbc6;
+  border-right: 2px solid #98dbc6;
 }
 
 nav a#portfolio {
   background-color: #5bc8ac;
   color: black;
+  border-top: 2px solid #e6d72a;
+  border-bottom: 2px solid #e6d72a;
+  border-left: 2px solid #e6d72a;
+  border-right: 2px solid #e6d72a;
 }
 
 nav a#blog {
   background-color: #e6d72a;
   color: black;
+  border-top: 2px solid #98dbc6;
+  border-bottom: 2px solid #98dbc6;
+  border-left: 2px solid #98dbc6;
+  border-right: 2px solid #98dbc6;
 }
 
 main {
@@ -61,9 +76,13 @@ main {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: main;
-  background-image: url("images/Developer.png");
+  background-image: url("images/developerr.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+main:hover {
+  background-image: url("images/flipdeveloper.png");
 }
 
 main #socials {
@@ -74,8 +93,11 @@ main #socials {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
-  background-color: #5bc8ac;
+}
+
+main #socials:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 footer {
@@ -87,5 +109,44 @@ footer {
 #logo img {
   height: 50px;
   border-radius: 50%;
+}
+
+#logo img:hover {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
