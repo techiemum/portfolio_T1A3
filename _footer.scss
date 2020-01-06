@@ -1,0 +1,14 @@
+$primary-color: #5bc8ac;
+$secondary-color: #e6d72a;
+$primary-font-color: black;
+$secondary-font-color: #800000;
+
+footer {
+    grid-area: footer;
+    margin-bottom: 450px;
+    text-align: center;
+}
+
+footer p {
+    color: $primary-color;
+}
