@@ -2,66 +2,76 @@ $primary-color: #5bc8ac;
 $secondary-color: #e6d72a;
 $primary-font-color: black;
 $secondary-font-color: #800000;
-
-
-
-#content  {
+// create grid areas//
+#content {
     background-color: white;
     display: grid;
     grid-template-rows: 9% 11% 40% 40%;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer";
+    grid-template-areas: "header" "nav" "main" "footer";
 }
 
 header {
     grid-area: header;
 }
 
-#logo{
+//styling logo animation //
+#logo {
     img {
         height: 80px;
         position: relative;
         margin: 10px 15px 15px 10px;
         border-radius: 50%;
-        &:hover{
-        -webkit-animation-name: shake;
-        animation-name: shake;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
+        &:hover {
+            -webkit-animation-name: shake;
+            animation-name: shake;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
         }
         @-webkit-keyframes shake {
-            0%, 100% {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+            0%,
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
             }
-            10%, 30%, 50%, 70%, 90% {
-            -webkit-transform: translate3d(-10px, 0, 0);
-            transform: translate3d(-10px, 0, 0);
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: translate3d(-10px, 0, 0);
+                transform: translate3d(-10px, 0, 0);
             }
-            20%, 40%, 60%, 80% {
-            -webkit-transform: translate3d(10px, 0, 0);
-            transform: translate3d(10px, 0, 0);
+            20%,
+            40%,
+            60%,
+            80% {
+                -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0);
             }
+        }
+        @keyframes shake {
+            0%,
+            100% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
             }
-            @keyframes shake {
-            0%, 100% {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: translate3d(-10px, 0, 0);
+                transform: translate3d(-10px, 0, 0);
             }
-            10%, 30%, 50%, 70%, 90% {
-            -webkit-transform: translate3d(-10px, 0, 0);
-            transform: translate3d(-10px, 0, 0);
+            20%,
+            40%,
+            60%,
+            80% {
+                -webkit-transform: translate3d(10px, 0, 0);
+                transform: translate3d(10px, 0, 0);
             }
-            20%, 40%, 60%, 80% {
-            -webkit-transform: translate3d(10px, 0, 0);
-            transform: translate3d(10px, 0, 0);
-            }
-            } 
+        }
     }
 }
-
