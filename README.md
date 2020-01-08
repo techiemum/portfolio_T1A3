@@ -2,7 +2,7 @@
 
 ## Links
 
-#### *Published portfolio website : 
+#### *Published portfolio website : https://techiemum.github.io/portfolio_T1A3/
 #### *Github repository : https://github.com/techiemum/portfolio_T1A3
 #### *Trelloboard link : https://trello.com/b/SRythb1A/portfoliot1a3
 
