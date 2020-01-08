@@ -185,6 +185,7 @@ main:hover {
 }
 
 .cards img {
+  border: 3px solid #e6d72a;
   max-width: 23vw;
   display: -ms-grid;
   display: grid;
@@ -196,8 +197,8 @@ main:hover {
 }
 
 .cards img:hover {
-  -webkit-box-shadow: 5px 10px;
-          box-shadow: 5px 10px;
+  -webkit-box-shadow: 5px 10px #5bc8ac;
+          box-shadow: 5px 10px #5bc8ac;
   border-color: #5bc8ac;
 }
 
