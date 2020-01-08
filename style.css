@@ -185,7 +185,6 @@ main:hover {
 }
 
 .cards img {
-  border: 3px solid #e6d72a;
   max-width: 23vw;
   display: -ms-grid;
   display: grid;
