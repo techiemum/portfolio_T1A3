@@ -2,9 +2,9 @@
 
 ## Links
 
-## *Published portfolio website : 
-## *Github repository : https://github.com/techiemum/portfolio_T1A3
-## *Trelloboard link : https://trello.com/b/SRythb1A/portfoliot1a3
+#### *Published portfolio website : 
+#### *Github repository : https://github.com/techiemum/portfolio_T1A3
+#### *Trelloboard link : https://trello.com/b/SRythb1A/portfoliot1a3
 
 
 ## Description of portfolio website
